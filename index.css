@@ -1,0 +1,97 @@
+*{
+    text-align: center;
+}
+
+.mins, .dot, .secs{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Roboto;
+
+}
+.focus{
+    font-size: 70px;
+}
+.initial{
+    background-color: #fc3a52;
+    padding: 40px;
+    padding-bottom: 170px;
+    color:white;
+    font-family: Roboto;
+    
+}
+
+.motivate{
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Lobster Two';
+}
+
+.timer{
+    padding-top: 30px;
+    font-family: Montserrat;
+}
+.timer button{
+    padding: 25px;
+    border-radius: 45px;
+    font-size: 25px;
+    background-color: #fc3a52;
+    border-color: #fc3a52;
+    border-right: none;
+    border-bottom: none;
+    font-weight: bold;
+    color:white;
+    margin-right: 30px;
+    font-family: Roboto;
+}
+.short{
+    padding-right: 20px;
+    padding:40px;
+}
+.pro{
+    padding:20px;
+}
+li{
+    list-style: none;
+}
+
+.addon{
+    padding-top: 120px;
+    font-family: Montserrat;
+}
+.addon h2{
+    color:black;
+    padding-bottom: 30px;
+}
+.addon input{
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ececec;
+    width: 40%;
+    border:none;
+    font-family: Montserrat;
+}
+.tasks{
+    color:#fc3a52;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+button:focus{
+    outline: 0 !important;
+    transition: ease-in-out all 2000ms;
+}
+.addon button{
+    background-color: #fc3a52;
+    padding:20px;
+    color:white;
+    border-color: #fc3a52;
+    border-right: #fc3a52;
+    border-bottom: #fc3a52;
+    font-weight: bold;
+    margin-right: 50px;
+    font-family: Montserrat;
+}
+.add,.clear{
+    padding: 20px;
+    font-size: 20px;
+}
