@@ -1,5 +1,16 @@
 *{
     text-align: center;
+    
+    animation: slideup 2s ease;
+}
+
+@keyframes slideup{
+    0%{
+        transform: translateY(150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .mins, .dot, .secs{
@@ -30,6 +41,9 @@
     padding-top: 30px;
     font-family: Montserrat;
 }
+button{
+    margin-left: 20px;
+}
 .timer button{
     padding: 25px;
     border-radius: 45px;
@@ -57,6 +71,7 @@ li{
 .addon{
     padding-top: 120px;
     font-family: Montserrat;
+    text-align: centre;
 }
 .addon h2{
     color:black;
@@ -66,7 +81,7 @@ li{
     padding: 20px;
     font-size: 20px;
     background-color: #ececec;
-    width: 80%;
+    width: 60%;
     border:none;
     font-family: Montserrat;
 }
@@ -91,7 +106,24 @@ button:focus{
     margin-right: 50px;
     font-family: Montserrat;
 }
+.reset{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.long span{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .add,.clear{
     padding: 20px;
     font-size: 20px;
+    color:white;
+    background-color: #fc3a52;
+    border:none;
+    border-right: none;
+    border-top: none;
+    margin:0px;
+}
+.add{
+    margin:30px;
 }
