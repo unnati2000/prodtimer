@@ -4,6 +4,7 @@ var short = document.querySelector(".short");
 var long = document.querySelector(".long");
 var min = document.querySelector(".mins");
 var sec = document.querySelector(".secs");
+var reset = document.querySelector(".reset");
 var second = 60;
 var p =59;
 var s = 29;
@@ -31,6 +32,10 @@ function change()
 pro.addEventListener("click", callpro);
 function secp()
 {
+    pro.disable = true;
+    long.disable = true;
+    short.disble = true;
+    
     min.innerHTML=p;
     second--;
     sec.innerHTML=second;
@@ -51,6 +56,9 @@ function callpro()
 {
     min.innerHTML=60;
     sec.innerHTML=00;
+    pro.disable = true;
+    long.disable = true;
+    short.disble = true;
     id=window.setInterval(secp, 1000);
 }
 
@@ -138,7 +146,18 @@ function clrtasks()
     tasks.innerHTML=``;
 }
 
-
+// reset
+reset.addEventListener("click", stop);
+function stop()
+{
+    swal({
+        title:"YOU QUIT",
+        text:"Task incomplete ",
+    })
+    clearTimeout(id);
+    min.innerHTML=0;
+    sec.innerHTML=0;
+}
 
 
 
